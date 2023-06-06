@@ -12,8 +12,8 @@ The chat UI (`http://localhost:8080/chat`) allows you to interact with the bot. 
 
 ### RESTful API
 
-- To get a response from the bot, make a `POST` request to `http://localhost:8080/chat` with the question in the request body.
-- CRUD operations for question-answer pairs can be done on the `/qa` endpoint.
+- To get a response from the bot, make a `POST` request to `http://localhost:8080/rest/chat` with the question in the request body.
+- CRUD operations for question-answer pairs can be done on the `rest/qa` endpoint.
 
 ## Docker 
 -  Repository Link: https://hub.docker.com/r/chitrakarayat/chatbot
