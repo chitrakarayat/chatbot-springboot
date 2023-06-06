@@ -4,15 +4,18 @@
 
 This project is a simple chatbot application built with Spring Boot. It uses a AWS RDS MySQL database to store and retrieve question-answer pairs which the bot uses to interact with users.
 
+## Postman Documentation: 
+https://documenter.getpostman.com/view/25622053/2s93sZ5tap
+
 ## Usage
 
 ### Chat UI
 
-The chat UI (`http://localhost:8080/chat`) allows you to interact with the bot. Simply type a question in the input field and press send to get a response.
+The chat UI (`http://chatbot.chitrakarayat.tech/chat`) allows you to interact with the bot. Simply type a question in the input field and press send to get a response.
 
 ### RESTful API
 
-- To get a response from the bot, make a `POST` request to `http://localhost:8080/rest/chat` with the question in the request body.
+- To get a response from the bot, make a `POST` request to `http://chatbot.chitrakarayat.tech/chat` with the question in the request body.
 - CRUD operations for question-answer pairs can be done on the `rest/qa` endpoint.
 
 ## Docker 
