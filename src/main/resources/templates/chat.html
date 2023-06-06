@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Chat</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+}
+p{
+color: #2196f3;
+font-weight: bold;
+font-size: large;
+max-width: fit-content;
+padding: 10px;
+}
+h1,
+h2 {
+color: #212529;
+}
+input {
+width: 20%;
+padding: 5px 15px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid #293241;
+border-radius: 4px;
+}
+button {
+background-color: #293241;
+border: 1px solid #293241;
+color: white;
+padding: 5px 15px;
+border-radius: 4px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+cursor: pointer;
+}
+li{
+color: #495057;
+}  
+</style>
+</head>
+<body>
+<h1>Chat with our bot</h1>
+<form method="post" action="#">
+<label for="message">Your message:</label>
+<input type="text" id="message" name="message">
+<button type="submit">Send</button>
+</form>
+<p th:if="${response}" th:text="${response}">Bot response will appear here</p>
+<h2>Possible questions:</h2>
+<ul>
+<li th:each="question : ${questions}" th:text="${question}"></li>
+</ul>
+
+</body>
+</html>
