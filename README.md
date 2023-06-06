@@ -18,8 +18,8 @@ The chat UI (`http://localhost:8080/chat`) allows you to interact with the bot. 
 ## Docker 
 -  Repository Link: https://hub.docker.com/r/chitrakarayat/chatbot
 -  Steps:
-  1. `docker pull chitrakarayat/chatbot:spring`
-  2. `docker run -p 8080:8080 chitrakarayat/chatbot:spring`
+    1. `docker pull chitrakarayat/chatbot:spring`
+    2. `docker run -p 8080:8080 chitrakarayat/chatbot:spring`
 
 ## Features
 - RESTful API that allows to get a response from the bot given a question.
